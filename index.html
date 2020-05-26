@@ -7,7 +7,7 @@
   <body>
     <header> 
       <nav>
-        <a><img src="img/icons logo/logo.svg" width="154px" height="64px" alt="logoGllacy">Logo</a>
+        <a href="index.html"><img src="img/icons_logo/logo.svg" width="154" height="64" alt="logoGllacy"></a>
         <ul>
           <li>
             <button>Каталог</button>
@@ -28,10 +28,10 @@
         </ul>
         <div>
           <button class="visually-hidden">Поиск</button>
-          <form action="https://echo.htmlacademy.ru">
+          <form action="https://echo.htmlacademy.ru" method="get">
             <div>
               <label for="search" class="visually-hidden">Поиск</label>
-              <input type="search" id="search" value="Крем-брюле" method="get">
+              <input type="search" name="search" id="search" placeholder="Крем-брюле">
             </div>
           </form>
         </div>
@@ -61,20 +61,21 @@
     </header>
     <main>
       <section>
+        <h2 class="visually-hidden">Слайдер</h2>
         <div>
           <ul>
             <li>
-              <img src="img/two_ice_cream.png" width="639px" height="582px" alt="Крем-брюле и пломбир с малиновым джемом">
+              <img src="img/two_ice_cream.png" width="639" height="582" alt="Крем-брюле и пломбир с малиновым джемом">
               <p>Крем-брюле и пломбир с малиновым джемом</p>
               <a href="">Давайте оба</a>
             </li>
             <li>
-              <img src="img/two_ice_cream2.png" width="639px" height="582px" alt="Шоколадный пломбир и лимонный сорбет">
+              <img src="img/two_ice_cream2.png" width="639" height="582" alt="Шоколадный пломбир и лимонный сорбет">
               <p>Шоколадный пломбир и лимонный сорбет</p>
               <a href="">Давайте оба</a>
             </li>
             <li>
-              <img src="img/two_ice_cream3.png" width="639px" height="582px" alt="Пломбир с помадкой и клубничный щербет">
+              <img src="img/two_ice_cream3.png" width="639" height="582" alt="Пломбир с помадкой и клубничный щербет">
               <p>Пломбир с помадкой и клубничный щербет</p>
               <a href="">Давайте оба</a>
             </li>
@@ -101,31 +102,35 @@
         </ul>
       </section>
       <section>
+        <h3 class="visually-hidden">Хиты</h3>
         <ul>
           <li>
-              <a href="">
-                  <img src="img/product1_1.jpg" width="267px" height="267px" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                  <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-              </a>
-              <p>310 ₽<span>/кг</span></p>
+            <a href="">
+              <img src="img/product1_1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+            </a>
+            <p>310 ₽<span>/кг</span></p>
           </li>
-          <li><a href="">
-                  <img src="img/product1_2.jpg" width="267px" height="267px" alt="Сливочно-кофейное с кусочками шоколада ">
-                  <p>Сливочно-кофейное с кусочками шоколада </p>
-              </a>
-              <p>380 ₽<span>/кг</span></p>
+          <li>
+            <a href="">
+              <img src="img/product1_2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада ">
+              <p>Сливочно-кофейное с кусочками шоколада </p>
+            </a>
+            <p>380 ₽<span>/кг</span></p>
           </li>
-          <li><a href="">
-                  <img src="img/product1_3.jpg" width="267px" height="267px" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                  <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-              </a>
-              <p>355 ₽<span>/кг</span></p>
+          <li>
+            <a href="">
+              <img src="img/product1_3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+            </a>
+            <p>355 ₽<span>/кг</span></p>
           </li>
-          <li><a href="">
-                  <img src="img/product1_4.jpg" width="267px" height="267px" alt="Сливочное крем-брюле с карамельной подливкой">
-                  <p>Сливочное крем-брюле с карамельной подливкой</p>
-              </a>
-              <p>415 ₽<span>/кг</span></p>
+          <li>
+            <a href="">
+              <img src="img/product1_4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+              <p>Сливочное крем-брюле с карамельной подливкой</p>
+            </a>
+            <p>415 ₽<span>/кг</span></p>
           </li>
         </ul>
       </section>
@@ -154,7 +159,7 @@
             </div>
             <div>
               <label for="button_subscribe" class="visually-hidden">Отправить</label>
-              <button type="submit" id="button_subscribe" name="button_subscribe" value="Отправить"></button>
+              <button type="submit" name="button_subscribe" id="button_subscribe" value="Отправить"></button>
             </div>
           </form>
         </div>
@@ -170,19 +175,19 @@
             <p>Мы обязательно вам ответим</p>
             <div>
               <label for="name_feedbackform" class="visually-hidden">Имя Фамилия</label>
-              <input type="text" id="name_feedbackform" name="name_feedbackform" value="Как вас зовут?" placeholder="Имя Фамилия" required>
+              <input type="text" name="name_feedbackform" id="name_feedbackform" placeholder="Имя Фамилия" required>
             </div>
             <div>
               <label for="email_feedbackform" class="visually-hidden">Почта</label>
-              <input type="email" id="email_feedbackform" name="email_feedbackform" value="Ваша почта для ответа?" placeholder="email@example.com " required>
+              <input type="email" name="email_feedbackform" id="email_feedbackform" placeholder="email@example.com" required>
             </div>
             <div>
-              <label for="feedback" class="visually-hidden">Напищите что-нибудь</label>
-              <textarea name="feedback" id="feedback" cols="40" rows="10" placeholder="В свободной форме" required>Напишите что-нибудь</textarea>
+              <label for="feedback" class="visually-hidden">Напишите что-нибудь</label>
+              <textarea name="feedback" id="feedback" cols="40" rows="10" placeholder="В свободной форме" required></textarea>
             </div>
             <div>
               <label for="button_feedback"  class="visually-hidden">Отправить</label>
-              <button type="submit" id="button_feedback" value="Отправить">Отправить</button>
+              <button type="submit" name="button_feedback" id="button_feedback" value="Отправить">Отправить</button>
             </div>
           </fieldset>
         </form>
@@ -191,6 +196,7 @@
     </main>
     <footer>
       <section>
+        <h3 class="visually-hidden">Социальные сети</h3>
         <ul>
           <li>
             <a href="">Фэйсбук</a>
@@ -207,6 +213,7 @@
         </ul>
       </section>
       <section>
+        <h3 class="visually-hidden">Информация о компании</h3>
         <ul>
           <li>
             <a href="">Для поставщиков</a>
