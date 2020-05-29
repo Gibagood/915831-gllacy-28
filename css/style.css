@@ -1,0 +1,283 @@
+:root {
+    --basic-white: #FFFFFF;
+    --basic-dark: #323232;
+    --basic-gray: #5A5A5A;
+    --basic-beige: #F8F7F4;
+    --basic-light-orange: #D07058;
+    --basic-pistachio: #849D8F;
+    --basic-gray-blue: #8996A6;
+    --basic-light-brown: #9D8B84;
+
+    --special-orange:#E84D37;
+}
+
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--basic-white);
+    background-color: var(--basic-pistachio);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a {
+   color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.site-navigation{
+    display: inline-block;
+    list-style: none;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.site-navigation:not(.shipping-and-payment .about-company ) {
+    color: var(--basic-white);
+}
+
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    background-color: var(--basic-beige);
+    color: var(--basic-dark);
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+}
+
+.search, .user-input{
+    display: none;
+    color: var(--basic-dark);
+    background-color: var(--basic-beige);
+    
+}
+
+.search-button{
+    width: 32px;
+    height: 32px;
+    background-image: url(/img/icons_logo/loupe.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.input-button{
+    width: 92px;
+    height: 32px;
+    background-image: url(/img/icons_logo/entrance-white.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.busket-button{
+    width: 92px;
+    height: 32px;
+    background-image: url(/img/icons_logo/basket.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.user-navigation-button{
+    color: var(--basic-white);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.dropdown-menu-item:hover {
+    background-color: #FBDED7;
+}
+
+.dropdown-menu-item:active {
+    background-color: #F6B5A5;
+}
+
+.catalog a:hover {
+    background-color: var(--basic-white);
+    color: var(--basic-dark);
+    text-decoration: none;
+}
+
+.catalog:hover .dropdown-menu,
+.catalog a:focus + .dropdown-menu,
+.search-block:hover .search, 
+.search-button:focus + .search,
+.input-block:hover .user-input,
+.input-button:focus + .user-input{
+    position: absolute;
+    display: block;
+}
+
+.search-block:hover .search-button{
+    background-color: var(--basic-white);
+    background-image: url(/img/icons_logo/loupe-black.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.phone-top{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.schedule{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.info-block{
+    background-color: var(--basic-beige);
+    background-image: url(/img/wafer2.jpg);
+    background-repeat: repeat;
+    background-position: 50% 50%;
+    color: var(--basic-dark);
+    border-radius: 16px;
+    margin: auto 27px;
+}
+
+.info-list{
+    list-style: none;
+    align-items: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.info-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 24px;
+    padding-left: 20px;
+    padding-right: 131px;
+}
+
+.info-item{
+    padding: 25px;
+    position: relative;
+    align-items: center;
+}
+
+.info-ice-cream::before {
+    content: "";
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    background-image: url(/img/icons_logo/ice-cream.svg);
+    background-repeat: no-repeat;
+}
+
+.info-eco::before {
+    content: "";
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    background-image: url(/img/icons_logo/eco.svg);
+    background-repeat: no-repeat;
+}
+
+
+.info-cow::before {
+    content: "";
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    background-image: url(/img/icons_logo/cow.svg);
+    background-repeat: no-repeat;
+}
+
+
+.info-thermo::before {
+    content: "";
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    background-image: url(/img/icons_logo/thermometer.svg);
+    background-repeat: no-repeat;
+}
+
+.news{
+    position: absolute;
+    width: 560px;
+    height: 220px;
+    background-color: var(--basic-white);
+    background-image: url(/img/news.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    color: var(--basic-dark);
+    border-radius: 16px;
+    margin-left: 27px;
+    border-left: 20px solid;
+    border-left-color: transparent;
+}
+
+.news-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    align-items: center;
+    padding-top: 23px;
+    margin: 0;
+}
+
+.news-preview{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.subscription{
+    position: absolute;
+    right: 150px;
+    width: 560px;
+    height: 220px;
+    border: 5px solid;
+    background-color: var(--basic-beige);
+    border-image: url(/img/post-background.jpg) 5 round round;
+    border-radius: 16px;
+}
+
+.subscription-desc{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    align-items: center;
+    color: var(--basic-gray);
+    padding-top: 29px;
+    padding-left: 20px;
+    margin: 0;
+}
