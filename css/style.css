@@ -665,22 +665,40 @@ img {
     
 }
 
+.select-sort:hover{
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--basic-dark);
+}
+
 .sort-list{
     margin: 0;
     padding: 0;
-    padding-top: 2px;
     list-style: none;
     background: #FFFFFF;
+}
+
+.sort-list{
+    display: none;
+}
+
+.select-sort a:active .sort-list{
+    display: block;
 }
 
 .sort-item{
     display: block;
     font-weight: normal;
-    height: 22px;
+    height: 23px;
     font-size: 14px;
     font-weight: normal;
     color: #323232;
     padding-left: 19px;
+    line-height: 22px;
+}
+
+.sort-item:hover{
+    background: #1E90FF;
+    color: #FFFFFF;
 }
 
 .slider-block{
