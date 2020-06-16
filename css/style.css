@@ -637,6 +637,11 @@ img {
 }
 
 .filters-item{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
     margin-right: 15px;
 }
 
@@ -700,6 +705,65 @@ img {
     background: #1E90FF;
     color: #FFFFFF;
 }
+
+.price-filter{
+    width: 218px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.price-header{
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: 16px;
+    margin-bottom: 2px;
+}
+
+.range-controls{
+    position: relative;
+    display: block;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 17px;
+    padding-top: 17px;
+    padding-right: 21px;
+    padding-left: 21px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background-color: rgba(248, 247, 244, 0.5);
+}
+
+.range-controls .bar {
+    width: 60%;
+    height: 2px;
+    background-color:#F8F7F4;
+}
+
+
+.range-controls .toggle{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    background-color: #ABABAB;
+    border: 8px solid #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 34px;
+  }
+  
+  .range-controls .toggle-max {
+    left: 132px;
+  }
 
 .slider-block{
     position: relative;

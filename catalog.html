@@ -146,8 +146,16 @@
               </ul>
             </div> 
             <div class="price-filter filters-item">
-              <label for="price">Цена: 100 ₽ – 500 ₽</label>
-              <input type="range" name="price" id="price" min="100" max="500" step="5">
+              <span class="price-header">Цена: 100 ₽ – 500 ₽</span>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min tabindex="0""></div>
+                <div class="toggle toggle-max tabindex="0""></div>
+              </div>
+              <!-- <label for="price">Цена: 100 ₽ – 500 ₽</label>
+              <input type="range" name="price" id="price" min="100" max="500" step="5"> -->
             </div>
             <div class="fat-content-filter filters-item">
               <fieldset>
