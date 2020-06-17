@@ -207,73 +207,75 @@
             <button class="button button-feedback">Форма обратной связи</button>
           </div>
         </section>
-        <section class="feedback-block">
-          <div class="feedback-form">
-            <form action="https://echo.htmlacademy.ru">
-              <fieldset>
-                <legend  class="visually-hidden">Форма обратной связи</legend>
-                <p>Мы обязательно вам ответим</p>
-                <div>
-                  <label for="name_feedbackform" class="visually-hidden">Имя Фамилия</label>
-                  <input type="text" name="name_feedbackform" id="name_feedbackform" placeholder="Имя Фамилия" required>
-                </div>
-                <div>
-                  <label for="email_feedbackform" class="visually-hidden">Почта</label>
-                  <input type="email" name="email_feedbackform" id="email_feedbackform" placeholder="email@example.com" required>
-                </div>
-                <div>
-                  <label for="feedback-desc" class="visually-hidden">Напишите что-нибудь</label>
-                  <textarea name="feedback-desc" id="feedback-desc" cols="40" rows="10" placeholder="В свободной форме" required></textarea>
-                </div>
-                <div>
-                  <label for="button_feedback"  class="visually-hidden">Отправить</label>
-                  <button type="submit" class="button button-site" name="button_feedback" id="button_feedback" value="Отправить" >Отправить</button>
-                </div>
-              </fieldset>
-            </form>
-            <button  class="visually-hidden">Закрыть</button>
-          </div>
-        </section>
       </main>
       <footer class="footer container">
-        <section class="socials">
-          <h3 class="visually-hidden">Социальные сети</h3>
-          <ul class="socials-list">
-            <li class="socials-item-fb socials-item">
-              <a href="" aria-label="Фэйсбук"></a>
-            </li>
-            <li class="socials-item-vk socials-item">
-              <a href="" aria-label="Вконтакте"></a>
-            </li>
-            <li class="socials-item-ig socials-item">
-              <a href="" aria-label="Инстаграм"></a>
-            </li>
-            <li class="socials-item-tw socials-item">
-              <a href="" aria-label="Твитер"></a>
-            </li>
-          </ul>
-        </section>
-        <section class="about-company">
-          <h3 class="visually-hidden">Информация о компании</h3>
-          <ul class="about-company-list">
-            <li class="about-company-item like">
-              <a href="">Для поставщиков</a>
-            </li>
-            <li class="about-company-item">
-              <a href="">Наши документы</a>
-            </li>
-            <li class="about-company-item">
-              <a href="">О производстве</a>
-            </li>
-            <li class="about-company-item">
-              <a href="">Экологические стандарты</a>
-            </li>
-          </ul>
-        </section>
-        <div class="development">
-          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+        <div class="footer-content">
+          <section class="socials">
+            <h3 class="visually-hidden">Социальные сети</h3>
+            <ul class="socials-list">
+              <li class="socials-item-fb socials-item">
+                <a href="" aria-label="Фэйсбук"></a>
+              </li>
+              <li class="socials-item-vk socials-item">
+                <a href="" aria-label="Вконтакте"></a>
+              </li>
+              <li class="socials-item-ig socials-item">
+                <a href="" aria-label="Инстаграм"></a>
+              </li>
+              <li class="socials-item-tw socials-item">
+                <a href="" aria-label="Твитер"></a>
+              </li>
+            </ul>
+          </section>
+          <section class="about-company">
+            <h3 class="visually-hidden">Информация о компании</h3>
+            <ul class="about-company-list">
+              <li class="about-company-item like">
+                <a href="">Для поставщиков</a>
+              </li>
+              <li class="about-company-item">
+                <a href="">Наши документы</a>
+              </li>
+              <li class="about-company-item">
+                <a href="">О производстве</a>
+              </li>
+              <li class="about-company-item">
+                <a href="">Экологические стандарты</a>
+              </li>
+            </ul>
+          </section>
+          <div class="development">
+            <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+          </div>
         </div>
       </footer>
+      <section class="modal feedback-modal">
+        <div class="feedback-form">
+          <form action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend  class="visually-hidden">Форма обратной связи</legend>
+              <p>Мы обязательно вам ответим</p>
+              <div>
+                <label for="name_feedbackform" class="visually-hidden">Имя Фамилия</label>
+                <input type="text" name="name_feedbackform" id="name_feedbackform" placeholder="Имя Фамилия" required>
+              </div>
+              <div>
+                <label for="email_feedbackform" class="visually-hidden">Почта</label>
+                <input type="email" name="email_feedbackform" id="email_feedbackform" placeholder="email@example.com" required>
+              </div>
+              <div>
+                <label for="feedback-desc" class="visually-hidden">Напишите что-нибудь</label>
+                <textarea name="feedback-desc" id="feedback-desc" cols="40" rows="10" placeholder="В свободной форме" required></textarea>
+              </div>
+              <div>
+                <label for="button_feedback"  class="visually-hidden">Отправить</label>
+                <button type="submit" class="button button-site" name="button_feedback" id="button_feedback" value="Отправить" >Отправить</button>
+              </div>
+            </fieldset>
+          </form>
+          <button  class="visually-hidden">Закрыть</button>
+        </div>
+      </section>
     </div>
   </body>
 </html>
