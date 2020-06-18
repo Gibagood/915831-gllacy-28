@@ -199,7 +199,30 @@
         </div>
         </section>
         <section class="address-map">
-          <div class="map" ><iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.579656364286!2d30.322886466226425!3d59.939116868765105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1591962804738!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+          <div class="map" id="map" style="width:"600" height:"450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></div>
+            <script>
+              function initMap() {
+                var coordinates = {lat: 59.938635 , lng:  30.323118},
+                
+                  map = new google.maps.Map(document.getElementById('map'), {
+                    center: new google.maps.LatLng(59.939302, 30.329432), zoom: 16
+                  });
+                  
+                  marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(59.938635, 30.323118),
+                    map: map
+                  });
+
+                  image = '../img/icons_logo/pin.svg',
+                    marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(59.938635, 30.323118),
+                    map: map,
+                    icon: image
+                  });
+              }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZCn2d1ATqgaWa7S0cgVOmOLCqnOE55mc&callback=initMap"></script>
+            <!-- <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592480214192!5m2!1sru!2sru"  width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
           <div class="address">
             <h3 class="address-title">Адрес главного офиса и офлайн-магазина:</h3>
             <address class="address-desc">ул. Большая Конюшенная, 19/8, Санкт-Петербург</address>

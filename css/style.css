@@ -1466,7 +1466,7 @@ img {
     left: calc(50% + 255px);
     top: -42px;
 }
-
+/* 
 .address::before{
     content:"";
     position: absolute;
@@ -1477,7 +1477,7 @@ img {
     background-image: url(../img/icons_logo/pin.svg);
     background-repeat: no-repeat;
 }
-
+ */
 .address-title{
     font-weight: normal;
     font-size: 14px;
