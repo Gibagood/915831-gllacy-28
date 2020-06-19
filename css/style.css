@@ -67,8 +67,8 @@ img {
 }
 
 
-.site-wrapper{
-    min-width: 1200px;
+.site-wrapper{/* 
+    min-width: 1200px; */
     color: var(--basic-white);
     background-repeat:no-repeat;
     background-position: top center;
@@ -1591,6 +1591,28 @@ img {
 
 .feedback-modal{
     display: none;
+}
+
+
+.feedback-modal{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.feedback-form{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 477px;
+    height: auto;
+    border-radius: 6px;
+    z-index:200;
+    background: #F8F7F4;
 }
 
 .footer-content{
