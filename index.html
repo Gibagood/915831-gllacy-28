@@ -274,29 +274,29 @@
       </footer>
       <section class="modal feedback-modal">
         <div class="feedback-form">
-          <h2 class="feedback-form-header">Мы обязательно вам ответим</h2>
+          <h2 class="feedback-form-header">Мы обязательно вам ответим!</h2>
           <form action="https://echo.htmlacademy.ru">
-            <fieldset>
+            <fieldset class="feedback-block">
               <legend  class="visually-hidden">Форма обратной связи</legend>
-              <div>
+              <div class="feedback-name feedback-field">
                 <label for="name_feedbackform" class="visually-hidden">Имя Фамилия</label>
                 <input type="text" name="name_feedbackform" id="name_feedbackform" placeholder="Имя Фамилия" required>
               </div>
-              <div>
+              <div class="feedback-email feedback-field">
                 <label for="email_feedbackform" class="visually-hidden">Почта</label>
                 <input type="email" name="email_feedbackform" id="email_feedbackform" placeholder="email@example.com" required>
               </div>
-              <div>
+              <div class="feedback-desc feedback-field">
                 <label for="feedback-desc" class="visually-hidden">Напишите что-нибудь</label>
                 <textarea name="feedback-desc" id="feedback-desc" cols="40" rows="10" placeholder="В свободной форме" required></textarea>
               </div>
-              <div>
+              <div  class="feedback-form-button button">
                 <label for="button_feedback"  class="visually-hidden">Отправить</label>
                 <button type="submit" class="button button-site" name="button_feedback" id="button_feedback" value="Отправить" >Отправить</button>
               </div>
             </fieldset>
           </form>
-          <button  class="visually-hidden">Закрыть</button>
+          <button class="modal-close" type="button" aria-label="Закрыть"></button>
         </div>
       </section>
     </div>
