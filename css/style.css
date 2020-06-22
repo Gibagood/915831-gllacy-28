@@ -281,6 +281,7 @@ img {
     margin: 0;
 }
 
+
 .search-input {
     width: 311px;
     background: #FFFFFF;
@@ -289,10 +290,37 @@ img {
     border-radius: 4px;
     padding: 14px;
     margin: 18px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #323232;
+}
+
+.search-input:hover{
+    border: 2px solid rgba(178, 178, 178, 0.52);
+    padding: 14px;
+    margin: 17px 14px;
+}
+
+.search-input:focus{
+    border: 2px solid rgba(46, 136, 228, 0.52);
+    padding: 14px;
+    margin: 17px 14px;
+    outline: none;
+}
+
+.user-navigation ::-webkit-input-placeholder{
+    color: #999999; /* Chrome, Safari, Opera */
     font-weight: normal;
     font-size: 14px;
-    color: #999999;
 }
+
+
+.user-navigation ::-moz-placeholder {
+    color: #999999; /* Firefox */
+    font-weight: normal;
+    font-size: 14px;
+}
+
 
 .search-block:hover .search-button{
     background-color: var(--basic-white);
@@ -358,27 +386,47 @@ img {
     border:none;
     padding: 0;
     margin: 0;
+    background: #F8F7F4;
 }
 
 .email-input input, .password-input input{
     display: block;
-    width: 241px;
+    width: 242px;
     height: 44px;
     padding: 0;
     padding-left: 14px;
     margin: 0;
     margin-top: 20px;
-    margin-left: 19px;
+    margin-left: 20px;
     background: #FFFFFF;
     border: 1px solid #D3D3D2;
     box-sizing: border-box;
     border-radius: 4px;
+    font-weight: bold;
     font-size: 14px;
-    color: #999999;
+    color: #323232;
 }
 
-.password-input input{
-    padding-bottom: 5px;
+.email-input input:hover, 
+.password-input input:hover{
+    border: 2px solid rgba(178, 178, 178, 0.52);
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left: 13px;
+}
+
+.email-input input:focus,
+.password-input input:focus{
+    border: 2px solid rgba(46, 136, 228, 0.52);
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-left: 13px;
+    outline: none;
+}
+
+.password-input input:hover,
+.password-input + input:focus{
+    margin-top: 20px;
 }
 
 .button-login-options{
@@ -911,10 +959,17 @@ img {
     margin: 0;
     padding: 0;
     margin-right: 13px;
+    filter:opacity(80%);
 }
 
-.filling-filter-checkbox{
-    filter: brightness(200%);
+.filling-filter-checkbox:hover,
+.filling-filter-checkbox-on:hover{
+    filter:opacity(100%);
+}
+
+.filling-filter-checkbox:disabled,
+.filling-filter-checkbox-on:disabled{
+    filter:opacity(40%);
 }
 
 .filling-filter-checkbox-on{
@@ -925,6 +980,7 @@ img {
     margin: 0;
     padding: 0;
     margin-right: 9px;
+    filter:opacity(80%);
 }
 
 .button-filter{
@@ -1184,6 +1240,19 @@ img {
     cursor: pointer;
 }
 
+
+.button-quick-view:hover.button-quick-view,
+.button-quick-view:focus.button-quick-view{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+    box-shadow: 0px 2px 2px #AC1000;
+}
+
+.button-quick-view:active.button-quick-view{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+    box-shadow: inset 0px 2px 2px #942718;
+}
+
+
 .catalog-hits .catalog-item::before{
     position: absolute;
     width: 61px;
@@ -1408,12 +1477,43 @@ img {
     padding: 11px;
     padding-right: 13px;
     font-size: 16px;
+    font-weight: bold;
     line-height: 16px;
-    color: #999999;  
+    color: #323232; 
     background: #FFFFFF;
     border: 1px solid rgba(178, 178, 178, 0.52);
     border-radius: 6px;
 }
+
+.subscription-field input:hover{
+    border: 2px solid rgba(178, 178, 178, 0.52);
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-right: 12px;
+}
+
+.subscription-field input:focus{
+    border: 2px solid rgba(46, 136, 228, 0.52);
+    margin-top: 40px;
+    margin-left: 20px;
+    padding-right: 12px;
+    outline: none;
+}
+
+
+.subscription-field ::-webkit-input-placeholder{
+    color: #999999; /* Chrome, Safari, Opera */
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+.subscription-field ::-moz-placeholder {
+    color: #999999; /* Firefox */
+    font-weight: normal;
+    font-size: 16px;
+}
+
 
 .button-subscribe{
     display: inline-block;
@@ -1588,19 +1688,28 @@ img {
     top: 5px;
     right: -20px;
 }
+
+.modal-show {
+    display: block;
+}
+
+.feedback-modal{
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content:center;
+    align-items:center;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 300;
+}
 /* 
 .feedback-modal{
     display: none;
 }
  */
-
-.feedback-modal{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.3);
-}
-
 .feedback-form{
     position: fixed;
     top: 338px;
@@ -1636,8 +1745,8 @@ img {
     border: 1px solid rgba(178, 178, 178, 0.52);
     box-sizing: border-box;
     border-radius: 4px;
-    color: #999999;
-    font-weight: normal;
+    color: #323232;
+    font-weight: bold;
     font-size: 16px;
     padding: 0;
     padding-top: 12px;
@@ -1662,8 +1771,56 @@ img {
     resize: none;
 }
 
-.feedback-field input:hover{
+.feedback-form ::-webkit-input-placeholder{
+    color: #999999; /* Chrome, Safari, Opera */
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.feedback-form ::-moz-placeholder {
+    color: #999999; /* Firefox */
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.feedback-email input:hover, 
+.feedback-desc textarea:hover{
     border: 2px solid rgba(178, 178, 178, 0.52);
+    margin-left: 24px;
+    margin-top: 20px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 13px;
+}
+
+.feedback-name input:hover{
+    border: 2px solid rgba(178, 178, 178, 0.52);
+    margin-left: 24px;
+    margin-top: 23px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 13px;
+}
+
+.feedback-email input:focus, 
+.feedback-desc textarea:focus{
+    border: 2px solid rgba(46, 136, 228, 0.52);
+    margin-left: 24px;
+    margin-top: 20px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 13px;
+    outline: none;
+}
+
+.feedback-name input:focus{
+    border: 2px solid rgba(46, 136, 228, 0.52);
+    margin-left: 24px;
+    margin-top: 23px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 13px;
+    outline: none;
 }
 
 .feedback-form-button button{
@@ -1691,6 +1848,7 @@ img {
     width: 21px;
     height: 21px;
     cursor: pointer;
+    background-color: transparent;
     background-image: url(/img/icons_logo/cross-big.svg);
     background-repeat: no-repeat;
     border: none;
@@ -1843,4 +2001,26 @@ img {
 .breadcrumbs-item a:active,
 .breadcrumbs-item + a:focus{
     color: #FFBC9E;
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+  
+    70% {
+      transform: translateY(30px);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
 }
