@@ -1,9 +1,9 @@
 var buttonFeedback = document.querySelector(".button-feedback");
-var feedbackForm = document.querySelector(".feedback-form");
-var modalClose = loginPopup.querySelector(".modal-close");
-var feedbackFormForm = loginPopup.querySelector(".feedback-form-form");
-var feedbackName = loginPopup.querySelector(".feedback-name");
-var feedbackEmail = loginPopup.querySelector(".feedback-email");
+var feedbackForm = document.querySelector(".feedback-modal");
+var modalClose = feedbackForm.querySelector(".modal-close");
+var feedbackFormForm = feedbackForm.querySelector(".feedback-form-form");
+var feedbackName = feedbackForm.querySelector(".feedback-name-input");
+var feedbackEmail = feedbackForm.querySelector(".feedback-email-input");
 
 var isStorageSupport = true;
 var storage = "";
@@ -15,7 +15,6 @@ try {
 }
 
 buttonFeedback.addEventListener("click", function () {
-    evt.preventDefault();
     feedbackForm.classList.add("modal-show");
 
     if (storage) {
@@ -29,7 +28,7 @@ buttonFeedback.addEventListener("click", function () {
 modalClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     feedbackForm.classList.remove("modal-show");
-    loginPopup.classList.remove("modal-error");
+    feedbackForm.classList.remove("modal-error");
 });
 
 feedbackFormForm.addEventListener("submit", function (evt) {
@@ -51,7 +50,7 @@ window.addEventListener("keydown", function (evt) {
       if (feedbackForm.classList.contains("modal-show")) {
         evt.preventDefault();
         feedbackForm.classList.remove("modal-show");
-        loginPopup.classList.remove("modal-error");
+        feedbackForm.classList.remove("modal-error");
       }
     }
   });

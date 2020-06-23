@@ -103,9 +103,9 @@
               </li>
             </ul>
             <div class="toggle-list">
-              <button class="current" type="button" aria-label="Первый слайд" class="toggle-item"></button>
-              <button type="button" aria-label="Второй слайд" class="toggle-item"></button>
-              <button type="button" aria-label="Третий слайд" class="toggle-item"></button>
+              <button class="toggle-button current" type="button" aria-label="Первый слайд" class="toggle-item"></button>
+              <button class="toggle-button" type="button" aria-label="Второй слайд" class="toggle-item"></button>
+              <button class="toggle-button" type="button" aria-label="Третий слайд" class="toggle-item"></button>
             </div>
           </div>
         </section>    
@@ -199,7 +199,7 @@
         </div>
         </section>
         <section class="address-map">
-          <div class="map" id="map" style=" height:"450px" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></div>
+          <div class="map" id="map" style="height: 450px; border:0;" allowfullscreen="" aria-hidden="false" scrollwheel="false" tabindex="0"></div>
             <script>
               function initMap() {
                 var coordinates = {lat: 59.938635 , lng:  30.323118},
@@ -221,8 +221,6 @@
                   });
               }
             </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZCn2d1ATqgaWa7S0cgVOmOLCqnOE55mc&callback=initMap"></script>
-            <!-- <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1592480214192!5m2!1sru!2sru"  width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
           <div class="address">
             <h3 class="address-title">Адрес главного офиса и офлайн-магазина:</h3>
             <address class="address-desc">ул. Большая Конюшенная, 19/8, Санкт-Петербург</address>
@@ -280,19 +278,19 @@
               <legend  class="visually-hidden">Форма обратной связи</legend>
               <div class="feedback-name feedback-field">
                 <label for="name_feedbackform" class="visually-hidden">Имя Фамилия</label>
-                <input type="text" name="name_feedbackform" id="name_feedbackform" placeholder="Имя Фамилия" required>
+                <input class="feedback-name-input" type="text" name="name_feedbackform" id="name_feedbackform" placeholder="Имя Фамилия" required>
               </div>
               <div class="feedback-email feedback-field">
                 <label for="email_feedbackform" class="visually-hidden">Почта</label>
-                <input type="email" name="email_feedbackform" id="email_feedbackform" placeholder="email@example.com" required>
+                <input class="feedback-email-input" type="email" name="email_feedbackform" id="email_feedbackform" placeholder="email@example.com" required>
               </div>
               <div class="feedback-desc feedback-field">
                 <label for="feedback-desc" class="visually-hidden">Напишите что-нибудь</label>
-                <textarea name="feedback-desc" id="feedback-desc" cols="40" rows="10" placeholder="В свободной форме" required></textarea>
+                <textarea class="feedback-desc-input" name="feedback-desc" id="feedback-desc" cols="40" rows="10" placeholder="В свободной форме" required></textarea>
               </div>
               <div  class="feedback-form-button">
                 <label for="button_feedback"  class="visually-hidden">Отправить</label>
-                <button class="button" type="submit" class="button button-site" name="button_feedback" id="button_feedback" value="Отправить" >Отправить</button>
+                <button class="button feedback-button-input" type="submit" class="button button-site" name="button_feedback" id="button_feedback" value="Отправить" >Отправить</button>
               </div>
             </fieldset>
           </form>
@@ -300,6 +298,8 @@
         </div>
       </section>
     </div>
-    <script src="feedback-modal.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZCn2d1ATqgaWa7S0cgVOmOLCqnOE55mc&callback=initMap"></script>
+    <script src="/js/slider.js"></script>
+    <script src="/js/feedbackModal.js"></script>
   </body>
 </html>
