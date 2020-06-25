@@ -67,8 +67,7 @@ img {
 }
 
 
-.site-wrapper{/* 
-    min-width: 1200px; */
+.site-wrapper{
     color: var(--basic-white);
     background-repeat:no-repeat;
     background-position: top center;
@@ -709,66 +708,37 @@ img {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    font-weight: 500;
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.2);
     border-radius: 20px;
     color: var(--basic-white);
     margin-top: 2px;
-    padding: 7px 19px 8px 15px;
-    
-}
-
-.select-sort::after{
-    content:"";
-    position: absolute;
-    width: 11px;
-    height: 10px;
-    top: 14px;
-    left: 171px;
-    background-image: url(../img/icons_logo/icon-down-dir-white.svg);
-    background-repeat: no-repeat;
+    padding: 9px 36px 10px 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: url(../img/icons_logo/icon-down-dir-white.svg) no-repeat right center rgba(255, 255, 255, 0.2);
+    background-position: 170px 13px;
+    outline: none;
+    border: none;
 }
 
 .select-sort:hover{
-    background: rgba(255, 255, 255, 0.2);
+    background-image: url(../img/icons_logo/icon-down-dir.svg);
+    background-repeat: no-repeat;
+    background-position: 170px 13px;
+    background-color: rgba(255, 255, 255, 0.2);
     color: var(--basic-dark);
 }
 
-.select-sort:hover.select-sort::after{
-    background-image: url(../img/icons_logo/icon-down-dir.svg);
-    background-repeat: no-repeat;
-}
-
-.sort-list{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background: #FFFFFF;
-}
-/* 
-.sort-list{
-    display: none;
-}
- */
-.select-sort a:active .sort-list{
+option.sort-item {
     display: block;
-}
-
-.sort-item{
-    display: block;
-    font-weight: normal;
     height: 23px;
+    font-family: inherit;
     font-size: 14px;
     font-weight: normal;
     color: #323232;
-    padding-left: 19px;
-    line-height: 22px;
-}
-
-.sort-item:hover{
-    background: #1E90FF;
-    color: #FFFFFF;
+    border:none;
+    outline: none;
 }
 
 .price-filter{
@@ -1053,7 +1023,7 @@ img {
 
 .slider-block{
     position: relative;
-    padding-top: 276px;
+    padding-top: 275px;
     margin-bottom: 38px;
     text-align: center;
     color: var(--basic-white);
@@ -1489,7 +1459,7 @@ img {
 .subscription-block{
     background-color: var(--basic-beige);
     border-radius: 18px;
-    padding-bottom: 33px;
+    padding-bottom: 34px;
 }
 
 .subscription-desc{
@@ -1513,8 +1483,8 @@ img {
     display: inline-block;
     vertical-align: baseline;
     width: 342px;
-    margin-left: 21px;
-    margin-top: 41px;
+    margin-left: 22px;
+    margin-top: 42px;
     padding: 11px;
     padding-right: 13px;
     font-size: 16px;
@@ -1566,7 +1536,7 @@ img {
     box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
     border-radius: 70px;
     padding: 13px 21px;
-    margin-left: 5px;
+    margin-left: 4px;
     font-size: 18px;
     color: white;
     border: none;
@@ -1577,7 +1547,7 @@ img {
 .address-map {
     position: relative;
     width: 100%;
-    margin-top: 42px;
+    margin-top: 41px;
     padding-top: 62px;
     padding-bottom: 60px;
     min-height: 306px;
@@ -1589,6 +1559,7 @@ img {
     height: 100%;
     top:0;
     left:0;
+    background-image: url(../img/map.jpg);
 }
 
 .map-iframe{
@@ -1608,7 +1579,7 @@ img {
     left: calc(50% + 255px);
     top: -42px;
 }
-/* 
+
 .address::before{
     content:"";
     position: absolute;
@@ -1619,7 +1590,7 @@ img {
     background-image: url(../img/icons_logo/pin.svg);
     background-repeat: no-repeat;
 }
- */
+
 .address-title{
     font-weight: normal;
     font-size: 14px;
@@ -1636,6 +1607,7 @@ img {
     font-size: 18px;
     line-height: 24px;
     align-items: center;
+    margin-top: -1px;
 }
 
 .address-tel{
@@ -1645,7 +1617,7 @@ img {
     align-items: center;
     margin: 0;
     padding: 0;
-    margin-top: 22px;
+    margin-top: 21px;
     margin-right: 80px;
 }
 
@@ -1662,7 +1634,7 @@ img {
     box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
     border-radius: 70px;
     padding: 13px 21px;
-    margin-top: 25px;
+    margin-top: 26px;
     font-size: 18px;
     font-weight: 500;
     color: white;

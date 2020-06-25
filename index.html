@@ -199,28 +199,7 @@
         </div>
         </section>
         <section class="address-map">
-          <div class="map" id="map" style="height: 450px; border:0;" allowfullscreen="" aria-hidden="false" scrollwheel="false" tabindex="0"></div>
-            <script>
-              function initMap() {
-                var coordinates = {lat: 59.938635 , lng:  30.323118},
-                
-                  map = new google.maps.Map(document.getElementById('map'), {
-                    center: new google.maps.LatLng(59.939302, 30.329432), zoom: 16
-                  });
-                  
-                  marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(59.938635, 30.323118),
-                    map: map
-                  });
-
-                  image = '../img/icons_logo/pin.svg',
-                    marker = new google.maps.Marker({
-                    position: new google.maps.LatLng(59.938635, 30.323118),
-                    map: map,
-                    icon: image
-                  });
-              }
-            </script>
+          <div class="map"></div>
           <div class="address">
             <h3 class="address-title">Адрес главного офиса и офлайн-магазина:</h3>
             <address class="address-desc">ул. Большая Конюшенная, 19/8, Санкт-Петербург</address>
@@ -298,7 +277,7 @@
         </div>
       </section>
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZCn2d1ATqgaWa7S0cgVOmOLCqnOE55mc&callback=initMap"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZCn2d1ATqgaWa7S0cgVOmOLCqnOE55mc&callback=initMap"></script> -->
     <script src="/js/slider.js"></script>
     <script src="/js/feedbackModal.js"></script>
   </body>
