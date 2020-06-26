@@ -10,18 +10,30 @@ function nextSlide(){
 } */
 var sliders = document.querySelectorAll(".slider-list");
 var slider = document.querySelector(".slider");
-var toggleList = document.querySelectorAll(".toggle-list");
-var toggleButton = document.querySelector(".toggle-button");
+var toggleButtons = document.querySelectorAll(".toggle-button");
+/* var toggleButton = document.querySelector(".toggle-button"); */
 var siteWrapperOne = document.querySelector(".site-wrapper-1");
 var siteWrapperTwo = document.querySelector(".site-wrapper-2");
 var siteWrapperThree = document.querySelector(".site-wrapper-3");
 
-toggleButton.addEventListener("click", function() {
-    for (i=0; i<=toggleList.length; i++){
-        if(toggleList[i].classList.contains("current")){
-            toggleList.classList.remove("current");
-            toggleButton.classList.add("current");
-        }
+
+    
+for (let toggleButton of toggleButtons){
+    toggleButton.onclick = function () {
+        console.log(toggleButtons);
+        let i = 0;
+        while (i<=toggleButtons.length) {
+            toggleButton.classList.remove("current");
+            console.log(toggleButtons[i]);
+            i++;
+        };
+        toggleButton.classList.add("current");
+        
+        
+    } 
+    /* for (toggleButton of toggleButtons){
+        toggleButton.classList.add("current");
+    } */
     /* if(toggleList.contains("current")){
         console.log(".toggleList");
         toggleList.classList.remove("current");
@@ -32,5 +44,4 @@ toggleButton.addEventListener("click", function() {
     slider.classList.add("slider-current");
     toggleButton.classList.toggle("current");
  */
-  }  
-});
+}

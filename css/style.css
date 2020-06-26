@@ -1556,24 +1556,26 @@ option.sort-item {
 .map{
     position: absolute;
     width: 100%;
-    height: 100%;
-    top:0;
-    left:0;
+    top: 0;
+    height: 430px;
+    margin: 0 auto;
+    background-position: top center;
     background-image: url(../img/map.jpg);
+    background-repeat: no-repeat;
 }
-
+/* 
 .map-iframe{
     width: 100%;
     height: 100%;
 }
-
+ */
 .address {
     position: relative;
     width: 253px;
     background: #FEFEFE;
     border-radius: 16px;
     color: var(--basic-dark);
-    margin:  41px 15px -44px;
+    margin:  103px 15px -44px;
     padding: 16px 25px;
     padding-bottom: 29px;
     left: calc(50% + 255px);
@@ -1617,7 +1619,7 @@ option.sort-item {
     align-items: center;
     margin: 0;
     padding: 0;
-    margin-top: 21px;
+    margin-top: 23px;
     margin-right: 80px;
 }
 
@@ -1633,7 +1635,7 @@ option.sort-item {
     background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
     box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
     border-radius: 70px;
-    padding: 13px 21px;
+    padding: 12px 21px;
     margin-top: 26px;
     font-size: 18px;
     font-weight: 500;
