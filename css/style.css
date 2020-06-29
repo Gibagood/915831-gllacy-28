@@ -71,6 +71,15 @@ img {
     color: var(--basic-white);
     background-repeat:no-repeat;
     background-position: top center;
+    background-color: var(--basic-pistachio);
+    transition-duration: 1s;
+}
+
+.site-wrapper-catalog{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    background-position: top center;
+    background-repeat:no-repeat;
+    height: 656px;
 }
 
 .site-wrapper-1 {
@@ -657,6 +666,7 @@ img {
 
 .breadcrumbs li:last-child {
     margin-right: 0;
+    text-decoration: none;
 }
 
 .filters-header{
@@ -683,7 +693,7 @@ img {
 
 .filters-item{
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     padding: 0;
     margin: 0;
@@ -693,7 +703,7 @@ img {
 
 .sort-filter{
     display: block;
-    min-width: 196px;
+    width: 196px;
     padding: 0;
     flex-grow:1;
 }
@@ -788,7 +798,7 @@ option.sort-item {
     height: 4px;
     padding: 0;
     background-color: #ABABAB;
-    border: 9px solid #FFFFFF;
+    border: 8px solid #FFFFFF;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -956,7 +966,7 @@ option.sort-item {
     filter:opacity(80%);
 }
 
-.filling-filter-input:checked + .filling-filter-desc::after{
+.filling-filter-input:checked + .filling-filter-desc::before{
     content:"";
     position: absolute;
     width: 23px;
@@ -967,27 +977,17 @@ option.sort-item {
     left: -32px;
     top: 0px;
     cursor: pointer;
+    border: none;
 }
 
 .filling-filter-desc:hover::before,
-.filling-filter-input:checked + .filling-filter-desc:hover::after{
+.filling-filter-input:checked + .filling-filter-desc:hover::before{
     filter:opacity(100%);
 }
 
 .filling-filter-desc:disabled::before,
-.filling-filter-input:checked + .filling-filter-desc:disabled::after{
+.filling-filter-input:checked + .filling-filter-desc:disabled::before{
     filter:opacity(40%);
-}
-
-.filling-filter-checkbox-on{
-    width: 23px;
-    height: 20px;
-    background-image: url(../img/icons_logo/checkbox-on.svg);
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    margin-right: 9px;
-    filter:opacity(80%);
 }
 
 .button-filter{
@@ -1037,6 +1037,11 @@ option.sort-item {
 
 .slider{
     display: none;
+}
+
+.slider-item{
+    animation-name: opacity;
+    animation-duration: 1s;
 }
 
 .slider-current {
@@ -1505,8 +1510,8 @@ option.sort-item {
 
 .subscription-field input:focus{
     border: 2px solid rgba(46, 136, 228, 0.52);
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: 41px;
+    margin-left: 21px;
     padding-right: 12px;
     outline: none;
 }
@@ -1945,7 +1950,7 @@ option.sort-item {
     align-items: center;
     margin-left: 176px;
     margin-top: 31px;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 13px;
     text-decoration: underline;
     text-align: center;
@@ -2035,5 +2040,15 @@ option.sort-item {
   
     100% {
       transform: translateY(0);
+    }
+}
+
+@keyframes opacity{
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
     }
 }
