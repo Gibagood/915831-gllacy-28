@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html  lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
@@ -14,7 +14,7 @@
           <div class="main-navigation">
             <a class="logo-Gllacy"><img src="img/icons_logo/logo.svg" width="154" height="64" alt="logoGllacy"></a>
             <ul class="site-navigation">
-              <li class="catalog">
+              <li class="site-navigation-item catalog">
                 <a class="catalog-menu" href="">Каталог</a>
                 <ul class="dropdown-menu">
                   <li class="dropdown-menu-item">
@@ -29,10 +29,10 @@
                     <a class="dropdown-menu-link" href="">Мелорин</a></li>
                 </ul>
               </li>
-              <li>
+              <li class="site-navigation-item">
                 <a class="catalog-menu shipping-and-payment" href="">Доставка и оплата</a>
               </li>
-              <li>
+              <li class="site-navigation-item">
                 <a class="catalog-menu about-company-menu" href="">О компании</a>
               </li>
             </ul>
@@ -136,15 +136,15 @@
                 <p class="catalog-item-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
               </a>
               <a href="" class="button button-quick-view">Быстрый просмотр</a>
-              <p class="catalog-item-price">310 ₽<span>/кг</span></p>
+              <p class="catalog-item-price">310 ₽<span class="price-kilograms">/кг</span></p>
             </li>
             <li class="catalog-item">
               <a class="catalog-content" href="">
                 <img class="catalog-image" src="img/product1_2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада ">
-                <p class="catalog-item-title">Сливочно-кофейное с кусочками шоколада </p>
+                <p class="catalog-item-title">Сливочно-кофейное с кусочками шоколада</p>
               </a>
               <a href="" class="button button-quick-view">Быстрый просмотр</a>
-              <p class="catalog-item-price">380 ₽<span>/кг</span></p>
+              <p class="catalog-item-price">380 ₽<span class="price-kilograms">/кг</span></p>
             </li>
             <li class="catalog-item">
               <a class="catalog-content" href="">
@@ -152,7 +152,7 @@
                 <p class="catalog-item-title">Сливочно-клубничное <br>с присыпкой из белого шоколада</p>
               </a>
               <a href="" class="button button-quick-view">Быстрый просмотр</a>
-              <p class="catalog-item-price">355 ₽<span>/кг</span></p>
+              <p class="catalog-item-price">355 ₽<span class="price-kilograms">/кг</span></p>
             </li>
             <li class="catalog-item">
               <a class="catalog-content" href="">
@@ -160,7 +160,7 @@
                 <p class="catalog-item-title">Сливочное крем-брюле <br>с карамельной подливкой</p>
               </a>
               <a href="" class="button button-quick-view">Быстрый просмотр</a>
-              <p class="catalog-item-price">415 ₽<span>/кг</span></p>
+              <p class="catalog-item-price">415 ₽<span class="price-kilograms">/кг</span></p>
             </li>
           </ul>
         </section>
@@ -177,17 +177,17 @@
           <div class="news-block">
           <article class="news">
             <h2 class="news-title">Новое в нашем блоге</h2>
-            <a class="news-preview" href="">10 способов сервировки фруктовых щербетов <br> к столу</a>
+            <a class="news-preview" href="">10 способов сервировки фруктовых щербетов&emsp; к столу</a>
           </article>
           <div class="subscription">
             <div class="subscription-block">
-              <form action="https://echo.htmlacademy.ru">
+              <form class="subscription-block-form" action="https://echo.htmlacademy.ru">
                 <p class="subscription-desc">
                   Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                 </p>
                 <div class="subscription-field">
                   <label for="email_subscribe" class="visually-hidden">Подписка</label>
-                  <input type="email" name="email_subscribe" id="email_subscribe" placeholder="email@example.com" required>
+                  <input class="subscription-field-input" type="email" name="email_subscribe" id="email_subscribe" placeholder="email@example.com" required>
                 </div>
                 <div class="button-subscribe">
                   <label for="button_subscribe" class="visually-hidden">Отправить</label>
@@ -246,7 +246,7 @@
             </ul>
           </section>
           <div class="development">
-            <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+            <p>Сделано в <a  class="development-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
           </div>
         </div>
       </footer>
@@ -268,9 +268,9 @@
                 <label for="feedback-desc" class="visually-hidden">Напишите что-нибудь</label>
                 <textarea class="feedback-desc-input" name="feedback-desc" id="feedback-desc" cols="40" rows="10" placeholder="В свободной форме" required></textarea>
               </div>
-              <div  class="feedback-form-button">
+              <div class="feedback-form-button">
                 <label for="button_feedback"  class="visually-hidden">Отправить</label>
-                <button class="button feedback-button-input" type="submit" class="button button-site" name="button_feedback" id="button_feedback" value="Отправить" >Отправить</button>
+                <button class="button feedback-button-input button-site" type="submit" name="button_feedback" id="button_feedback" value="Отправить" >Отправить</button>
               </div>
             </fieldset>
           </form>
