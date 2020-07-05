@@ -768,6 +768,7 @@ img {
     background-position: 170px 13px;
     background-color: rgba(255, 255, 255, 0.2);
     color: var(--basic-dark);
+    cursor: pointer;
 }
 
 ul.sort-list{
@@ -781,11 +782,13 @@ ul.sort-list{
     z-index: 10;
 }
 
-.select-sort:hover .sort-list{
+.select-sort:hover + ul.sort-list,
+ul.sort-list:hover{
     display: block;
+    cursor: pointer;
 }
 
-.sort-item {
+.sort-item-link {
     display: block;
     height: 22px;
     padding-inline-start: 19px;
@@ -798,9 +801,10 @@ ul.sort-list{
     outline: none;
 }
 
-a.sort-item/* :hover */ {
-    background-color: #1E90FF;
-    color: #FFFFFF;
+li.sort-item a.sort-item-link:hover {
+    background-color:rgba(30, 144, 255, 1);
+    color: rgb(255, 255, 255);
+    -webkit-text-fill-color: rgb(255, 255, 255);
 }
 
 .price-filter{
