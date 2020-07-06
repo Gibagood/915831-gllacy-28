@@ -1283,6 +1283,7 @@ li.sort-item a.sort-item-link:hover {
 
 .catalog-item:hover .button-quick-view {
     display: inline-block;
+    vertical-align: top;
 }
 
 .button-quick-view:hover.button-quick-view, .button-quick-view:focus.button-quick-view {
