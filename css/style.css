@@ -371,7 +371,7 @@ img {
 .search-block:hover .search-button,
 .search-button:focus {
   background-color: var(--basic-white);
-  background-image: url(../img/icons_logo/loupe-black.svg);
+  background-image: url(../img/icons_logo/loupe_black.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   outline: none;
@@ -398,7 +398,7 @@ img {
   font-size: 14px;
   line-height: 16px;
 
-  background-image: url(../img/icons_logo/entrance-white.svg);
+  background-image: url(../img/icons_logo/entrance_white.svg);
   background-repeat: no-repeat;
   background-position: 16px 6px;
   border: none;
@@ -559,7 +559,7 @@ img {
   color: var(--basic-dark);
 
   background-color: var(--basic-white);
-  background-image: url(../img/icons_logo/basket-red.svg);
+  background-image: url(../img/icons_logo/basket_red.svg);
   background-repeat: no-repeat;
   background-position: 16px 6px;
   border: none;
@@ -825,7 +825,7 @@ img {
   font-size: 16px;
   color: var(--basic-white);
 
-  background: url(../img/icons_logo/icon-down-dir-white.svg) no-repeat right center rgba(255, 255, 255, 0.2);
+  background: url(../img/icons_logo/icon_down_dir_white.svg) no-repeat right center rgba(255, 255, 255, 0.2);
   background-position: 171px 13px;
   border: none;
   border-radius: 20px;
@@ -842,7 +842,7 @@ img {
   color: var(--basic-dark);
 
   background-color: rgba(255, 255, 255, 0.2);
-  background-image: url(../img/icons_logo/icon-down-dir.svg);
+  background-image: url(../img/icons_logo/icon_down_dir.svg);
   background-repeat: no-repeat;
   background-position: 170px 13px;
   cursor: pointer;
@@ -1120,7 +1120,7 @@ img {
   width: 23px;
   height: 20px;
 
-  background-image: url(../img/icons_logo/checkbox-on.svg);
+  background-image: url(../img/icons_logo/checkbox_on.svg);
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
@@ -1584,7 +1584,7 @@ img {
   width: 49px;
   height: 49px;
 
-  background-image: url(../img/icons_logo/ice-cream.svg);
+  background-image: url(../img/icons_logo/ice_cream.svg);
   background-repeat: no-repeat;
 }
 
@@ -1677,8 +1677,8 @@ img {
   width: 550px;
   padding: 5px;
 
-  background: url(../img/border-mailing.png) repeat top left;
   background-color: var(--basic-beige);
+  background: url(../img/border_mailing.png) repeat top left;
   border-radius: 16px;
 }
 
@@ -2123,7 +2123,7 @@ textarea {
   height: 21px;
 
   background-color: transparent;
-  background-image: url(../img/icons_logo/cross-big.svg);
+  background-image: url(../img/icons_logo/cross_big.svg);
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
@@ -2309,7 +2309,7 @@ textarea {
   width: 108px;
   height: 39px;
 
-  background-image: url(../img/icons_logo/logo-htmlacademy.svg);
+  background-image: url(../img/icons_logo/logo_htmlacademy.svg);
   background-repeat: no-repeat;
 }
 
