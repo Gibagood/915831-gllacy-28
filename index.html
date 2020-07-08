@@ -14,7 +14,7 @@
     <header class="main-header container">
       <nav class="navigation">
         <div class="main-navigation">
-          <a class="logo-Gllacy"><img src="img/icons_logo/logo.svg" width="154" height="64" alt="logoGllacy"></a>
+          <a class="logo-gllacy"><img src="img/icons_logo/logo.svg" width="154" height="64" alt="Магазин Глэйси"></a>
           <ul class="site-navigation">
             <li class="site-navigation-item catalog">
               <a class="catalog-menu" href="">Каталог</a>
@@ -41,7 +41,7 @@
         </div>
         <ul class="user-navigation">
           <li class="user-navigation-item search-block">
-            <button class="user-navigation-button search-button"></button>
+            <button class="user-navigation-button search-button" aria-label="Поиск"></button>
             <div class="search">
               <form action="https://echo.htmlacademy.ru" method="get">
                 <div>
@@ -77,11 +77,11 @@
             </div>
           </li>
           <li class="user-navigation-item basket-block">
-            <button class="user-navigation-button busket-button">Пусто</button>
+            <button class="user-navigation-button basket-button">Пусто</button>
           </li>
         </ul>
       </nav>
-      <div class="header-shedule-phone">
+      <div class="header-schedule-phone">
         <span class="schedule">с 10 до 20, ежедневно</span>
         <a class="phone-top" href="tel:88124502525">8 812 450-25-25</a>
       </div>
@@ -157,7 +157,7 @@
             <a class="catalog-content" href="">
               <img class="catalog-image" src="img/product1_3.jpg" width="267" height="267"
                 alt="Сливочно-клубничное с присыпкой из белого шоколада">
-              <p class="catalog-item-title">Сливочно-клубничное <br>с присыпкой из белого шоколада</p>
+              <p class="catalog-item-title">Сливочно-клубничное с&nbsp;присыпкой из белого шоколада</p>
             </a>
             <a href="" class="button button-quick-view">Быстрый просмотр</a>
             <p class="catalog-item-price">355 ₽<span class="price-kilograms">/кг</span></p>
@@ -166,7 +166,7 @@
             <a class="catalog-content" href="">
               <img class="catalog-image" src="img/product1_4.jpg" width="267" height="267"
                 alt="Сливочное крем-брюле с карамельной подливкой">
-              <p class="catalog-item-title">Сливочное крем-брюле <br>с карамельной подливкой</p>
+              <p class="catalog-item-title">Сливочное крем-брюле с&nbsp;карамельной подливкой</p>
             </a>
             <a href="" class="button button-quick-view">Быстрый просмотр</a>
             <p class="catalog-item-price">415 ₽<span class="price-kilograms">/кг</span></p>
@@ -228,7 +228,7 @@
           <address class="address-desc">ул. Большая Конюшенная, 19/8, Санкт-Петербург</address>
           <p class="address-tel">Для заказов по телефону: <a href="tel:88124502525">8 812 450-25-25</a>(с 10 до 20
             ежедневно)</p>
-          <button class="button button-feedback">Форма обратной связи</button>
+          <a href="#" class="button button-feedback">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -274,7 +274,7 @@
         </div>
       </div>
     </footer>
-    <section class="modal feedback-modal">
+    <section class="modal feedback-modal" id="modal">
       <div class="feedback-form">
         <h2 class="feedback-form-header">Мы обязательно вам ответим!</h2>
         <form class="feedback-form-form" action="https://echo.htmlacademy.ru">
@@ -283,17 +283,17 @@
             <div class="feedback-name feedback-field">
               <label for="name_feedbackform" class="visually-hidden">Имя Фамилия</label>
               <input class="feedback-name-input" type="text" name="name_feedbackform" id="name_feedbackform"
-                placeholder="Имя Фамилия" required>
+                placeholder="Имя Фамилия">
             </div>
             <div class="feedback-email feedback-field">
               <label for="email_feedbackform" class="visually-hidden">Почта</label>
               <input class="feedback-email-input" type="email" name="email_feedbackform" id="email_feedbackform"
-                placeholder="email@example.com" required>
+                placeholder="email@example.com">
             </div>
             <div class="feedback-desc feedback-field">
               <label for="feedback-desc" class="visually-hidden">Напишите что-нибудь</label>
               <textarea class="feedback-desc-input" name="feedback-desc" id="feedback-desc" cols="40" rows="10"
-                placeholder="В свободной форме" required></textarea>
+                placeholder="В свободной форме"></textarea>
             </div>
             <div class="feedback-form-button">
               <label for="button_feedback" class="visually-hidden">Отправить</label>

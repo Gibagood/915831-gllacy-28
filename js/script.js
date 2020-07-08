@@ -9,10 +9,6 @@ var toggleButtonThree = document.querySelector(".toggle-button-3");
 var sliderItemOne = document.querySelector(".slider-item-1");
 var sliderItemTwo = document.querySelector(".slider-item-2");
 var sliderItemThree = document.querySelector(".slider-item-3");
-var sortItemLinks = document.querySelectorAll(".sort-item-link");
-var sorting = document.querySelector(".sorting");
-var selectSort = document.querySelector(".select-sort");
-var sortFilter = document.querySelector(".sort-filter");
 var buttonFeedback = document.querySelector(".button-feedback");
 var feedbackForm = document.querySelector(".feedback-modal");
 
@@ -32,7 +28,8 @@ try {
 }
 
 if (buttonFeedback) {
-  buttonFeedback.addEventListener("click", function () {
+  buttonFeedback.addEventListener("click", function (evt) {
+    evt.preventDefault();
     feedbackForm.classList.add("modal-show");
 
     if (storage) {
@@ -99,22 +96,3 @@ for (let toggleButton of toggleButtons) {
     }
   }
 }
-
-if (selectSort) {
-  selectSort.addEventListener("click", function () {
-    if (sortFilter.classList.contains("sort-list-opened")) {
-      sortFilter.classList.remove("sort-list-opened");
-    } else {
-      sortFilter.classList.add("sort-list-opened");
-    }
-  });
-}
-
-sortItemLinks.forEach(function (sortItemLink) {
-  sortItemLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    sorting.value = this.innerText;
-    selectSort.innerText = this.innerText;
-    sortFilter.classList.remove("sort-list-opened");
-  });
-})
